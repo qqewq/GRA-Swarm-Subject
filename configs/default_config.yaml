@@ -1,0 +1,12 @@
+swarm:
+  num_agents: 10            # общее количество агентов
+  connection_density: 0.5   # плотность связей (доля от полного графа)
+  agent:
+    model_dim: 20           # размерность вектора модели мира
+    initial_foam: 0.8       # начальный уровень пены у не-субъектов
+    subjectivity_threshold: 0.05  # порог Φ, ниже которого агент считается субъектом
+  gra:
+    learning_rate: 0.01
+    max_iterations: 1000
+    convergence_tol: 1e-6
+  seed_subject_index: 0     # индекс агента, который изначально является субъектом
